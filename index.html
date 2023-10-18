@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cifrado y Descifrado</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            background-color: #f0f0f0;
+            font-family: 'Poppins', sans-serif;
+        }
+        .container {
+            background-color: #feedbf;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+            padding: 20px;
+            margin-top: 30px;
+        }
+        h1 {
+            text-align: center;
+            color: #fd6e8a;
+            font-weight: bold;
+            font-size: 32px;
+        }
+        .form-group {
+            margin-bottom: 20px;
+        }
+        #resultado {
+            height: 100px;
+        }
+        .btn-cifrar, .btn-descifrar {
+            width: 120px;
+            height: 40px;
+            border: none;
+            font-weight: bold;
+            font-size: 16px;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .btn-cifrar {
+            background-color: #80b3ff;
+            color: #fff;
+        }
+        .btn-descifrar {
+            background-color: #ffc2ce;
+            color: #fff;
+        }
+        .btn-cifrar:hover, .btn-descifrar:hover {
+            background-color: #007BFF;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Cifrado y Descifrado de Mensajes</h1>
+        <div class="form-group">
+            <label for="mensaje">Mensaje:</label>
+            <textarea class="form-control" id="mensaje" rows="3" placeholder="Escribe tu mensaje aquí"></textarea>
+        </div>
+        <div class="form-group text-center">
+            <button class="btn btn-cifrar btn-lg" id="cifrar">Cifrar</button>
+            <button class="btn btn-descifrar btn-lg" id="descifrar">Descifrar</button>
+        </div>
+        <div class="form-group">
+            <label for="resultado">Resultado:</label>
+            <textarea class="form-control" id="resultado" rows="3" readonly></textarea>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <script type="module" src="./script.js"></script>
+</body>
+</html>
